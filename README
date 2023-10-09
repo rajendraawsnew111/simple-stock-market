@@ -1,0 +1,11 @@
+1.I have used java and SpringBoot to implement the solution
+
+2.Added 5 REST endpoints in "TradingController" file to solve the problem statement.
+
+3.Initial Stock records created with "InitialStockConfig"
+
+4.REST endpoint test cases are implemented in TradingControllerTest file with SpringMvc and mockBean features
+
+5.Unit and Functional tests written inside Trading service tests with SpringBootTest feature
+
+6.Added POSTMan collection json file in the classpath for REST API testing.

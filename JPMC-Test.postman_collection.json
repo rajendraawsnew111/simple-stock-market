@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "7bfceabd-ae6e-45eb-905b-2022c9f7d8a9",
+		"name": "JPMC-Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "calculate_Dividend",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"stock\":\"POP\",\n\t\"price\": 6\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/stock/calculateDividend/POP/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stock",
+						"calculateDividend",
+						"POP",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calculate_PERatio",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"stock\":\"POP\",\n\t\"price\": 6\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/stock/calculatePeRatio/POP/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stock",
+						"calculatePeRatio",
+						"POP",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trade",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"stock\":\"POP\",\n\t\"price\": 6,\n    \"quantity\": 10,\n    \"amount\": 60,\n    \"tradeType\":\"SELL\",\n    \"trader\":\"trader1\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/stock/trade",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stock",
+						"trade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Volume Weighted Stock price",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"stock\":\"POP\",\n\t\"price\": 6,\n    \"quantity\": 10,\n    \"amouont\": 60,\n    \"tradeType\":\"SELL\",\n    \"trader\":\"trader1\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/stock/volumeWeightedStockPrice/15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stock",
+						"volumeWeightedStockPrice",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calculate GBCE",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"stock\":\"POP\",\n\t\"price\": 6,\n    \"quantity\": 10,\n    \"amount\": 60,\n    \"tradeType\":\"SELL\",\n    \"trader\":\"trader1\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/stock/calculateGBCE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stock",
+						"calculateGBCE"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
